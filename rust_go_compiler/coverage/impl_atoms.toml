@@ -1,0 +1,1567 @@
+# Ground-truth set B: impl_atoms
+# Mechanically scanned from go_source_code -- DO NOT EDIT.
+# Regenerate: python tools/extract_impl_atoms.py
+# Categories: pragma / flag / rules(per pass) / obj(per arch).
+
+[[impl_atoms]]
+atom_id = "pragma:build"
+kind = "pragma"
+name = "//go:build"
+source_path = "go_source_code/src/cmd/compile/internal/noder/irgen.go"
+line = 90
+count = 20
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_"
+kind = "pragma"
+name = "//go:cgo_"
+source_path = "go_source_code/src/cmd/compile/internal/noder/writer.go"
+line = 95
+count = 2
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_dynamic_linker"
+kind = "pragma"
+name = "//go:cgo_dynamic_linker"
+source_path = "go_source_code/src/cmd/compile/internal/noder/lex.go"
+line = 129
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_import_dynamic"
+kind = "pragma"
+name = "//go:cgo_import_dynamic"
+source_path = "go_source_code/src/cmd/compile/internal/noder/lex.go"
+line = 109
+count = 2
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_import_static"
+kind = "pragma"
+name = "//go:cgo_import_static"
+source_path = "go_source_code/src/cmd/compile/internal/noder/lex.go"
+line = 121
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_ldflag"
+kind = "pragma"
+name = "//go:cgo_ldflag"
+source_path = "go_source_code/src/cmd/compile/internal/noder/lex.go"
+line = 137
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:cgo_unsafe_args"
+kind = "pragma"
+name = "//go:cgo_unsafe_args"
+source_path = "go_source_code/src/cmd/compile/internal/noder/noder.go"
+line = 337
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:embed"
+kind = "pragma"
+name = "//go:embed"
+source_path = "go_source_code/src/cmd/compile/internal/noder/noder.go"
+line = 310
+count = 8
+
+[[impl_atoms]]
+atom_id = "pragma:generate"
+kind = "pragma"
+name = "//go:generate"
+source_path = "go_source_code/src/cmd/compile/internal/types/alg.go"
+line = 13
+count = 9
+
+[[impl_atoms]]
+atom_id = "pragma:linkname"
+kind = "pragma"
+name = "//go:linkname"
+source_path = "go_source_code/src/cmd/compile/internal/noder/writer.go"
+line = 89
+count = 3
+
+[[impl_atoms]]
+atom_id = "pragma:linknamestd"
+kind = "pragma"
+name = "//go:linknamestd"
+source_path = "go_source_code/src/cmd/compile/internal/noder/writer.go"
+line = 89
+count = 2
+
+[[impl_atoms]]
+atom_id = "pragma:noescape"
+kind = "pragma"
+name = "//go:noescape"
+source_path = "go_source_code/src/cmd/compile/internal/escape/escape.go"
+line = 456
+count = 2
+
+[[impl_atoms]]
+atom_id = "pragma:noinline"
+kind = "pragma"
+name = "//go:noinline"
+source_path = "go_source_code/src/cmd/compile/internal/noder/dump.go"
+line = 32
+count = 13
+
+[[impl_atoms]]
+atom_id = "pragma:nointerface"
+kind = "pragma"
+name = "//go:nointerface"
+source_path = "go_source_code/src/cmd/compile/internal/typecheck/expr.go"
+line = 367
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:uintptr"
+kind = "pragma"
+name = "//go:uintptr"
+source_path = "go_source_code/src/cmd/compile/internal/typecheck/stmt.go"
+line = 267
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:uintptrescapes"
+kind = "pragma"
+name = "//go:uintptrescapes"
+source_path = "go_source_code/src/cmd/compile/internal/escape/call.go"
+line = 311
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:uintptrkeepalive"
+kind = "pragma"
+name = "//go:uintptrkeepalive"
+source_path = "go_source_code/src/cmd/compile/internal/noder/lex.go"
+line = 72
+count = 1
+
+[[impl_atoms]]
+atom_id = "pragma:wasmexport"
+kind = "pragma"
+name = "//go:wasmexport"
+source_path = "go_source_code/src/cmd/compile/internal/noder/reader.go"
+line = 1235
+count = 5
+
+[[impl_atoms]]
+atom_id = "pragma:wasmimport"
+kind = "pragma"
+name = "//go:wasmimport"
+source_path = "go_source_code/src/cmd/compile/internal/noder/writer.go"
+line = 1156
+count = 7
+
+[[impl_atoms]]
+atom_id = "flag:B"
+kind = "flag"
+name = "B"
+help = "disable bounds checking"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 57
+
+[[impl_atoms]]
+atom_id = "flag:C"
+kind = "flag"
+name = "C"
+help = "disable printing of columns in error messages"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 58
+
+[[impl_atoms]]
+atom_id = "flag:D"
+kind = "flag"
+name = "D"
+help = "set relative `path` for local imports"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 59
+
+[[impl_atoms]]
+atom_id = "flag:E"
+kind = "flag"
+name = "E"
+help = "debug symbol export"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 60
+
+[[impl_atoms]]
+atom_id = "flag:I"
+kind = "flag"
+name = "I"
+help = "add `directory` to import search path"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 61
+
+[[impl_atoms]]
+atom_id = "flag:K"
+kind = "flag"
+name = "K"
+help = "debug missing line numbers"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 62
+
+[[impl_atoms]]
+atom_id = "flag:L"
+kind = "flag"
+name = "L"
+help = "also show actual source file names in error messages for positions affected by //line directives"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 63
+
+[[impl_atoms]]
+atom_id = "flag:N"
+kind = "flag"
+name = "N"
+help = "disable optimizations"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 64
+
+[[impl_atoms]]
+atom_id = "flag:S"
+kind = "flag"
+name = "S"
+help = "print assembly listing"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 65
+
+[[impl_atoms]]
+atom_id = "flag:W"
+kind = "flag"
+name = "W"
+help = "debug parse tree after type checking"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 67
+
+[[impl_atoms]]
+atom_id = "flag:LowerC"
+kind = "flag"
+name = "LowerC"
+help = "concurrency during compilation (1 means no concurrency)"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 69
+
+[[impl_atoms]]
+atom_id = "flag:LowerD"
+kind = "flag"
+name = "LowerD"
+help = "enable debugging settings; try -d help"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 70
+
+[[impl_atoms]]
+atom_id = "flag:LowerE"
+kind = "flag"
+name = "LowerE"
+help = "no limit on number of errors reported"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 71
+
+[[impl_atoms]]
+atom_id = "flag:LowerH"
+kind = "flag"
+name = "LowerH"
+help = "halt on error"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 72
+
+[[impl_atoms]]
+atom_id = "flag:LowerJ"
+kind = "flag"
+name = "LowerJ"
+help = "debug runtime-initialized variables"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 73
+
+[[impl_atoms]]
+atom_id = "flag:LowerL"
+kind = "flag"
+name = "LowerL"
+help = "disable inlining"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 74
+
+[[impl_atoms]]
+atom_id = "flag:LowerM"
+kind = "flag"
+name = "LowerM"
+help = "print optimization decisions"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 75
+
+[[impl_atoms]]
+atom_id = "flag:LowerO"
+kind = "flag"
+name = "LowerO"
+help = "write output to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 76
+
+[[impl_atoms]]
+atom_id = "flag:LowerP"
+kind = "flag"
+name = "LowerP"
+help = "set expected package import `path`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 77
+
+[[impl_atoms]]
+atom_id = "flag:LowerR"
+kind = "flag"
+name = "LowerR"
+help = "debug generated wrappers"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 78
+
+[[impl_atoms]]
+atom_id = "flag:LowerT"
+kind = "flag"
+name = "LowerT"
+help = "enable tracing for debugging the compiler"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 79
+
+[[impl_atoms]]
+atom_id = "flag:LowerW"
+kind = "flag"
+name = "LowerW"
+help = "debug type checking"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 80
+
+[[impl_atoms]]
+atom_id = "flag:LowerU"
+kind = "flag"
+name = "LowerU"
+help = "emit unsorted warnings/errors"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 81
+
+[[impl_atoms]]
+atom_id = "flag:LowerV"
+kind = "flag"
+name = "LowerV"
+help = "increase debug verbosity"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 82
+
+[[impl_atoms]]
+atom_id = "flag:AsmHdr"
+kind = "flag"
+name = "AsmHdr"
+help = "write assembly header to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 89
+
+[[impl_atoms]]
+atom_id = "flag:ASan"
+kind = "flag"
+name = "ASan"
+help = "build code compatible with C/C++ address sanitizer"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 90
+
+[[impl_atoms]]
+atom_id = "flag:Bench"
+kind = "flag"
+name = "Bench"
+help = "append benchmark times to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 91
+
+[[impl_atoms]]
+atom_id = "flag:BlockProfile"
+kind = "flag"
+name = "BlockProfile"
+help = "write block profile to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 92
+
+[[impl_atoms]]
+atom_id = "flag:BuildID"
+kind = "flag"
+name = "BuildID"
+help = "record `id` as the build id in the export metadata"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 93
+
+[[impl_atoms]]
+atom_id = "flag:CPUProfile"
+kind = "flag"
+name = "CPUProfile"
+help = "write cpu profile to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 94
+
+[[impl_atoms]]
+atom_id = "flag:Complete"
+kind = "flag"
+name = "Complete"
+help = "compiling complete package (no C or assembly)"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 95
+
+[[impl_atoms]]
+atom_id = "flag:ClobberDead"
+kind = "flag"
+name = "ClobberDead"
+help = "clobber dead stack slots (for debugging)"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 96
+
+[[impl_atoms]]
+atom_id = "flag:ClobberDeadReg"
+kind = "flag"
+name = "ClobberDeadReg"
+help = "clobber dead registers (for debugging)"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 97
+
+[[impl_atoms]]
+atom_id = "flag:Dwarf"
+kind = "flag"
+name = "Dwarf"
+help = "generate DWARF symbols"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 98
+
+[[impl_atoms]]
+atom_id = "flag:DwarfBASEntries"
+kind = "flag"
+name = "DwarfBASEntries"
+help = "use base address selection entries in DWARF"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 99
+
+[[impl_atoms]]
+atom_id = "flag:DwarfLocationLists"
+kind = "flag"
+name = "DwarfLocationLists"
+help = "add location lists to DWARF in optimized mode"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 100
+
+[[impl_atoms]]
+atom_id = "flag:Dynlink"
+kind = "flag"
+name = "Dynlink"
+help = "support references to Go symbols defined in other shared libraries"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 101
+
+[[impl_atoms]]
+atom_id = "flag:EmbedCfg"
+kind = "flag"
+name = "EmbedCfg"
+help = "read go:embed configuration from `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 102
+
+[[impl_atoms]]
+atom_id = "flag:Env"
+kind = "flag"
+name = "Env"
+help = "add `definition` of the form key=value to environment"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 103
+
+[[impl_atoms]]
+atom_id = "flag:GenDwarfInl"
+kind = "flag"
+name = "GenDwarfInl"
+help = "generate DWARF inline info records"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 104
+
+[[impl_atoms]]
+atom_id = "flag:GoVersion"
+kind = "flag"
+name = "GoVersion"
+help = "required version of the runtime"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 105
+
+[[impl_atoms]]
+atom_id = "flag:ImportCfg"
+kind = "flag"
+name = "ImportCfg"
+help = "read import configuration from `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 106
+
+[[impl_atoms]]
+atom_id = "flag:InstallSuffix"
+kind = "flag"
+name = "InstallSuffix"
+help = "set pkg directory `suffix`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 107
+
+[[impl_atoms]]
+atom_id = "flag:JSON"
+kind = "flag"
+name = "JSON"
+help = "version,file for JSON compiler/optimizer detail output"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 108
+
+[[impl_atoms]]
+atom_id = "flag:Lang"
+kind = "flag"
+name = "Lang"
+help = "Go language version source code expects"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 109
+
+[[impl_atoms]]
+atom_id = "flag:LinkObj"
+kind = "flag"
+name = "LinkObj"
+help = "write linker-specific object to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 110
+
+[[impl_atoms]]
+atom_id = "flag:LinkShared"
+kind = "flag"
+name = "LinkShared"
+help = "generate code that will be linked against Go shared libraries"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 111
+
+[[impl_atoms]]
+atom_id = "flag:Live"
+kind = "flag"
+name = "Live"
+help = "debug liveness analysis"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 112
+
+[[impl_atoms]]
+atom_id = "flag:MSan"
+kind = "flag"
+name = "MSan"
+help = "build code compatible with C/C++ memory sanitizer"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 113
+
+[[impl_atoms]]
+atom_id = "flag:MemProfile"
+kind = "flag"
+name = "MemProfile"
+help = "write memory profile to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 114
+
+[[impl_atoms]]
+atom_id = "flag:MemProfileRate"
+kind = "flag"
+name = "MemProfileRate"
+help = "set runtime.MemProfileRate to `rate`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 115
+
+[[impl_atoms]]
+atom_id = "flag:MutexProfile"
+kind = "flag"
+name = "MutexProfile"
+help = "write mutex profile to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 116
+
+[[impl_atoms]]
+atom_id = "flag:NoLocalImports"
+kind = "flag"
+name = "NoLocalImports"
+help = "reject local (relative) imports"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 117
+
+[[impl_atoms]]
+atom_id = "flag:CoverageCfg"
+kind = "flag"
+name = "CoverageCfg"
+help = "read coverage configuration from `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 118
+
+[[impl_atoms]]
+atom_id = "flag:Pack"
+kind = "flag"
+name = "Pack"
+help = "write to file.a instead of file.o"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 119
+
+[[impl_atoms]]
+atom_id = "flag:Race"
+kind = "flag"
+name = "Race"
+help = "enable race detector"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 120
+
+[[impl_atoms]]
+atom_id = "flag:Shared"
+kind = "flag"
+name = "Shared"
+help = "generate code that can be linked into a shared library"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 121
+
+[[impl_atoms]]
+atom_id = "flag:SmallFrames"
+kind = "flag"
+name = "SmallFrames"
+help = "reduce the size limit for stack allocated objects"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 122
+
+[[impl_atoms]]
+atom_id = "flag:Spectre"
+kind = "flag"
+name = "Spectre"
+help = "enable spectre mitigations in `list` (all, index, ret)"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 123
+
+[[impl_atoms]]
+atom_id = "flag:Std"
+kind = "flag"
+name = "Std"
+help = "compiling standard library"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 124
+
+[[impl_atoms]]
+atom_id = "flag:SymABIs"
+kind = "flag"
+name = "SymABIs"
+help = "read symbol ABIs from `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 125
+
+[[impl_atoms]]
+atom_id = "flag:TraceProfile"
+kind = "flag"
+name = "TraceProfile"
+help = "write an execution trace to `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 126
+
+[[impl_atoms]]
+atom_id = "flag:TrimPath"
+kind = "flag"
+name = "TrimPath"
+help = "remove `prefix` from recorded source file paths"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 127
+
+[[impl_atoms]]
+atom_id = "flag:WB"
+kind = "flag"
+name = "WB"
+help = "enable write barrier"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 128
+
+[[impl_atoms]]
+atom_id = "flag:PgoProfile"
+kind = "flag"
+name = "PgoProfile"
+help = "read profile or pre-process profile from `file`"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 129
+
+[[impl_atoms]]
+atom_id = "flag:ErrorURL"
+kind = "flag"
+name = "ErrorURL"
+help = "print explanatory URL with error message if applicable"
+source_path = "go_source_code/src/cmd/compile/internal/base/flag.go"
+line = 130
+
+[[impl_atoms]]
+atom_id = "rules:386.rules"
+kind = "rules"
+name = "386.rules"
+pass = "lower"
+rule_count = 577
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/386.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:386splitload.rules"
+kind = "rules"
+name = "386splitload.rules"
+pass = "splitload"
+rule_count = 4
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/386splitload.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:AMD64.rules"
+kind = "rules"
+name = "AMD64.rules"
+pass = "lower"
+rule_count = 1154
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/AMD64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:AMD64latelower.rules"
+kind = "rules"
+name = "AMD64latelower.rules"
+pass = "latelower"
+rule_count = 6
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/AMD64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:AMD64splitload.rules"
+kind = "rules"
+name = "AMD64splitload.rules"
+pass = "splitload"
+rule_count = 21
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/AMD64splitload.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:ARM.rules"
+kind = "rules"
+name = "ARM.rules"
+pass = "lower"
+rule_count = 1174
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/ARM.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:ARM64.rules"
+kind = "rules"
+name = "ARM64.rules"
+pass = "lower"
+rule_count = 1223
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/ARM64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:ARM64latelower.rules"
+kind = "rules"
+name = "ARM64latelower.rules"
+pass = "latelower"
+rule_count = 69
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/ARM64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:LOONG64.rules"
+kind = "rules"
+name = "LOONG64.rules"
+pass = "lower"
+rule_count = 665
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/LOONG64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:LOONG64latelower.rules"
+kind = "rules"
+name = "LOONG64latelower.rules"
+pass = "latelower"
+rule_count = 4
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/LOONG64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:MIPS.rules"
+kind = "rules"
+name = "MIPS.rules"
+pass = "lower"
+rule_count = 439
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/MIPS.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:MIPS64.rules"
+kind = "rules"
+name = "MIPS64.rules"
+pass = "lower"
+rule_count = 467
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/MIPS64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:MIPS64latelower.rules"
+kind = "rules"
+name = "MIPS64latelower.rules"
+pass = "latelower"
+rule_count = 1
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/MIPS64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:PPC64.rules"
+kind = "rules"
+name = "PPC64.rules"
+pass = "lower"
+rule_count = 655
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/PPC64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:PPC64latelower.rules"
+kind = "rules"
+name = "PPC64latelower.rules"
+pass = "latelower"
+rule_count = 21
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/PPC64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:RISCV64.rules"
+kind = "rules"
+name = "RISCV64.rules"
+pass = "lower"
+rule_count = 530
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/RISCV64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:RISCV64latelower.rules"
+kind = "rules"
+name = "RISCV64latelower.rules"
+pass = "latelower"
+rule_count = 16
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/RISCV64latelower.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:S390X.rules"
+kind = "rules"
+name = "S390X.rules"
+pass = "lower"
+rule_count = 703
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/S390X.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:Wasm.rules"
+kind = "rules"
+name = "Wasm.rules"
+pass = "lower"
+rule_count = 288
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/Wasm.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:dec.rules"
+kind = "rules"
+name = "dec.rules"
+pass = "decompose-builtin"
+rule_count = 47
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/dec.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:dec64.rules"
+kind = "rules"
+name = "dec64.rules"
+pass = "decompose-builtin"
+rule_count = 118
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/dec64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:divisible.rules"
+kind = "rules"
+name = "divisible.rules"
+pass = "divisible"
+rule_count = 20
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/divisible.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:divmod.rules"
+kind = "rules"
+name = "divmod.rules"
+pass = "divmod"
+rule_count = 29
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/divmod.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:generic.rules"
+kind = "rules"
+name = "generic.rules"
+pass = "opt"
+rule_count = 1013
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/generic.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:simdAMD64.rules"
+kind = "rules"
+name = "simdAMD64.rules"
+pass = "simd-lower"
+rule_count = 3619
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/simdAMD64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:simdARM64.rules"
+kind = "rules"
+name = "simdARM64.rules"
+pass = "simd-lower"
+rule_count = 435
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/simdARM64.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "rules:simdWasm.rules"
+kind = "rules"
+name = "simdWasm.rules"
+pass = "simd-lower"
+rule_count = 296
+source_path = "go_source_code/src/cmd/compile/internal/ssa/_gen/simdWasm.rules"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "arm"
+loc = 412
+source_path = "go_source_code/src/cmd/internal/obj/arm/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "arm"
+loc = 146
+source_path = "go_source_code/src/cmd/internal/obj/arm/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:anames5.go"
+kind = "obj"
+name = "anames5.go"
+arch = "arm"
+loc = 77
+source_path = "go_source_code/src/cmd/internal/obj/arm/anames5.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:asm5.go"
+kind = "obj"
+name = "asm5.go"
+arch = "arm"
+loc = 3142
+source_path = "go_source_code/src/cmd/internal/obj/arm/asm5.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:list5.go"
+kind = "obj"
+name = "list5.go"
+arch = "arm"
+loc = 124
+source_path = "go_source_code/src/cmd/internal/obj/arm/list5.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm:obj5.go"
+kind = "obj"
+name = "obj5.go"
+arch = "arm"
+loc = 748
+source_path = "go_source_code/src/cmd/internal/obj/arm/obj5.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "arm64"
+loc = 1513
+source_path = "go_source_code/src/cmd/internal/obj/arm64/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "arm64"
+loc = 653
+source_path = "go_source_code/src/cmd/internal/obj/arm64/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:anames7.go"
+kind = "obj"
+name = "anames7.go"
+arch = "arm64"
+loc = 125
+source_path = "go_source_code/src/cmd/internal/obj/arm64/anames7.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:anames_gen.go"
+kind = "obj"
+name = "anames_gen.go"
+arch = "arm64"
+loc = 708
+source_path = "go_source_code/src/cmd/internal/obj/arm64/anames_gen.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:asm7.go"
+kind = "obj"
+name = "asm7.go"
+arch = "arm64"
+loc = 8795
+source_path = "go_source_code/src/cmd/internal/obj/arm64/asm7.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:doc.go"
+kind = "obj"
+name = "doc.go"
+arch = "arm64"
+loc = 296
+source_path = "go_source_code/src/cmd/internal/obj/arm64/doc.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:encoding_gen.go"
+kind = "obj"
+name = "encoding_gen.go"
+arch = "arm64"
+loc = 3476
+source_path = "go_source_code/src/cmd/internal/obj/arm64/encoding_gen.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:goops_gen.go"
+kind = "obj"
+name = "goops_gen.go"
+arch = "arm64"
+loc = 705
+source_path = "go_source_code/src/cmd/internal/obj/arm64/goops_gen.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:inst.go"
+kind = "obj"
+name = "inst.go"
+arch = "arm64"
+loc = 896
+source_path = "go_source_code/src/cmd/internal/obj/arm64/inst.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:inst_gen.go"
+kind = "obj"
+name = "inst_gen.go"
+arch = "arm64"
+loc = 16111
+source_path = "go_source_code/src/cmd/internal/obj/arm64/inst_gen.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:list7.go"
+kind = "obj"
+name = "list7.go"
+arch = "arm64"
+loc = 329
+source_path = "go_source_code/src/cmd/internal/obj/arm64/list7.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:obj7.go"
+kind = "obj"
+name = "obj7.go"
+arch = "arm64"
+loc = 934
+source_path = "go_source_code/src/cmd/internal/obj/arm64/obj7.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:specialoperand_string.go"
+kind = "obj"
+name = "specialoperand_string.go"
+arch = "arm64"
+loc = 176
+source_path = "go_source_code/src/cmd/internal/obj/arm64/specialoperand_string.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:arm64:sysRegEnc.go"
+kind = "obj"
+name = "sysRegEnc.go"
+arch = "arm64"
+loc = 895
+source_path = "go_source_code/src/cmd/internal/obj/arm64/sysRegEnc.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "loong64"
+loc = 817
+source_path = "go_source_code/src/cmd/internal/obj/loong64/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:asm.go"
+kind = "obj"
+name = "asm.go"
+arch = "loong64"
+loc = 3327
+source_path = "go_source_code/src/cmd/internal/obj/loong64/asm.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:cnames.go"
+kind = "obj"
+name = "cnames.go"
+arch = "loong64"
+loc = 79
+source_path = "go_source_code/src/cmd/internal/obj/loong64/cnames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:cpu.go"
+kind = "obj"
+name = "cpu.go"
+arch = "loong64"
+loc = 449
+source_path = "go_source_code/src/cmd/internal/obj/loong64/cpu.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:doc.go"
+kind = "obj"
+name = "doc.go"
+arch = "loong64"
+loc = 398
+source_path = "go_source_code/src/cmd/internal/obj/loong64/doc.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:inst.go"
+kind = "obj"
+name = "inst.go"
+arch = "loong64"
+loc = 953
+source_path = "go_source_code/src/cmd/internal/obj/loong64/inst.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:instOp.go"
+kind = "obj"
+name = "instOp.go"
+arch = "loong64"
+loc = 1222
+source_path = "go_source_code/src/cmd/internal/obj/loong64/instOp.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:list.go"
+kind = "obj"
+name = "list.go"
+arch = "loong64"
+loc = 113
+source_path = "go_source_code/src/cmd/internal/obj/loong64/list.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:loong64:obj.go"
+kind = "obj"
+name = "obj.go"
+arch = "loong64"
+loc = 738
+source_path = "go_source_code/src/cmd/internal/obj/loong64/obj.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "mips"
+loc = 489
+source_path = "go_source_code/src/cmd/internal/obj/mips/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "mips"
+loc = 142
+source_path = "go_source_code/src/cmd/internal/obj/mips/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:anames0.go"
+kind = "obj"
+name = "anames0.go"
+arch = "mips"
+loc = 44
+source_path = "go_source_code/src/cmd/internal/obj/mips/anames0.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:asm0.go"
+kind = "obj"
+name = "asm0.go"
+arch = "mips"
+loc = 2139
+source_path = "go_source_code/src/cmd/internal/obj/mips/asm0.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:list0.go"
+kind = "obj"
+name = "list0.go"
+arch = "mips"
+loc = 83
+source_path = "go_source_code/src/cmd/internal/obj/mips/list0.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:mips:obj0.go"
+kind = "obj"
+name = "obj0.go"
+arch = "mips"
+loc = 1455
+source_path = "go_source_code/src/cmd/internal/obj/mips/obj0.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "ppc64"
+loc = 1098
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "ppc64"
+loc = 628
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:anames9.go"
+kind = "obj"
+name = "anames9.go"
+arch = "ppc64"
+loc = 55
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/anames9.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:asm9.go"
+kind = "obj"
+name = "asm9.go"
+arch = "ppc64"
+loc = 5480
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/asm9.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:asm9_gtables.go"
+kind = "obj"
+name = "asm9_gtables.go"
+arch = "ppc64"
+loc = 1660
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/asm9_gtables.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:doc.go"
+kind = "obj"
+name = "doc.go"
+arch = "ppc64"
+loc = 290
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/doc.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:list9.go"
+kind = "obj"
+name = "list9.go"
+arch = "ppc64"
+loc = 117
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/list9.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:ppc64:obj9.go"
+kind = "obj"
+name = "obj9.go"
+arch = "ppc64"
+loc = 1524
+source_path = "go_source_code/src/cmd/internal/obj/ppc64/obj9.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "riscv"
+loc = 1001
+source_path = "go_source_code/src/cmd/internal/obj/riscv/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:cpu.go"
+kind = "obj"
+name = "cpu.go"
+arch = "riscv"
+loc = 1804
+source_path = "go_source_code/src/cmd/internal/obj/riscv/cpu.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:doc.go"
+kind = "obj"
+name = "doc.go"
+arch = "riscv"
+loc = 344
+source_path = "go_source_code/src/cmd/internal/obj/riscv/doc.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:inst.go"
+kind = "obj"
+name = "inst.go"
+arch = "riscv"
+loc = 2191
+source_path = "go_source_code/src/cmd/internal/obj/riscv/inst.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:list.go"
+kind = "obj"
+name = "list.go"
+arch = "riscv"
+loc = 68
+source_path = "go_source_code/src/cmd/internal/obj/riscv/list.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:riscv:obj.go"
+kind = "obj"
+name = "obj.go"
+arch = "riscv"
+loc = 5160
+source_path = "go_source_code/src/cmd/internal/obj/riscv/obj.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "s390x"
+loc = 1027
+source_path = "go_source_code/src/cmd/internal/obj/s390x/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "s390x"
+loc = 739
+source_path = "go_source_code/src/cmd/internal/obj/s390x/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:anamesz.go"
+kind = "obj"
+name = "anamesz.go"
+arch = "s390x"
+loc = 38
+source_path = "go_source_code/src/cmd/internal/obj/s390x/anamesz.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:asmz.go"
+kind = "obj"
+name = "asmz.go"
+arch = "s390x"
+loc = 5109
+source_path = "go_source_code/src/cmd/internal/obj/s390x/asmz.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:condition_code.go"
+kind = "obj"
+name = "condition_code.go"
+arch = "s390x"
+loc = 128
+source_path = "go_source_code/src/cmd/internal/obj/s390x/condition_code.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:listz.go"
+kind = "obj"
+name = "listz.go"
+arch = "s390x"
+loc = 73
+source_path = "go_source_code/src/cmd/internal/obj/s390x/listz.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:objz.go"
+kind = "obj"
+name = "objz.go"
+arch = "s390x"
+loc = 730
+source_path = "go_source_code/src/cmd/internal/obj/s390x/objz.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:rotate.go"
+kind = "obj"
+name = "rotate.go"
+arch = "s390x"
+loc = 117
+source_path = "go_source_code/src/cmd/internal/obj/s390x/rotate.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:s390x:vector.go"
+kind = "obj"
+name = "vector.go"
+arch = "s390x"
+loc = 1091
+source_path = "go_source_code/src/cmd/internal/obj/s390x/vector.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:wasm:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "wasm"
+loc = 643
+source_path = "go_source_code/src/cmd/internal/obj/wasm/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:wasm:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "wasm"
+loc = 493
+source_path = "go_source_code/src/cmd/internal/obj/wasm/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:wasm:wasmobj.go"
+kind = "obj"
+name = "wasmobj.go"
+arch = "wasm"
+loc = 1529
+source_path = "go_source_code/src/cmd/internal/obj/wasm/wasmobj.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:a.out.go"
+kind = "obj"
+name = "a.out.go"
+arch = "x86"
+loc = 426
+source_path = "go_source_code/src/cmd/internal/obj/x86/a.out.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:aenum.go"
+kind = "obj"
+name = "aenum.go"
+arch = "x86"
+loc = 1611
+source_path = "go_source_code/src/cmd/internal/obj/x86/aenum.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:anames.go"
+kind = "obj"
+name = "anames.go"
+arch = "x86"
+loc = 1609
+source_path = "go_source_code/src/cmd/internal/obj/x86/anames.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:asm6.go"
+kind = "obj"
+name = "asm6.go"
+arch = "x86"
+loc = 5431
+source_path = "go_source_code/src/cmd/internal/obj/x86/asm6.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:avx_optabs.go"
+kind = "obj"
+name = "avx_optabs.go"
+arch = "x86"
+loc = 4628
+source_path = "go_source_code/src/cmd/internal/obj/x86/avx_optabs.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:evex.go"
+kind = "obj"
+name = "evex.go"
+arch = "x86"
+loc = 383
+source_path = "go_source_code/src/cmd/internal/obj/x86/evex.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:list6.go"
+kind = "obj"
+name = "list6.go"
+arch = "x86"
+loc = 264
+source_path = "go_source_code/src/cmd/internal/obj/x86/list6.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:obj6.go"
+kind = "obj"
+name = "obj6.go"
+arch = "x86"
+loc = 1430
+source_path = "go_source_code/src/cmd/internal/obj/x86/obj6.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:seh.go"
+kind = "obj"
+name = "seh.go"
+arch = "x86"
+loc = 166
+source_path = "go_source_code/src/cmd/internal/obj/x86/seh.go"
+line = 1
+
+[[impl_atoms]]
+atom_id = "obj:x86:ytab.go"
+kind = "obj"
+name = "ytab.go"
+arch = "x86"
+loc = 44
+source_path = "go_source_code/src/cmd/internal/obj/x86/ytab.go"
+line = 1
+

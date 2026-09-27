@@ -1,0 +1,30 @@
+# Seed features.toml -- human-attributed layer tying A/B/C atoms to feature_ids.
+#
+# The three *.toml next to this file (spec_atoms / impl_atoms / official-tests)
+# are machine-generated. THIS file is the only hand-edited one, and it is
+# policed by tools/validate_features.py. Every feature must touch all three
+# ground-truth sets or the validator fails -- that is the "no-omission" gate.
+#
+# Regenerate the atom sets:  python tools/extract_{spec,impl,test}_atoms.py
+# Validate this file:        python tools/validate_features.py coverage/features.toml
+
+[[features]]
+feature_id = "comments"
+spec_atoms = ["spec:Comments"]
+impl_atoms = ["pragma:build"]
+test_ids = ["L1:.:alias.go"]
+negative_test_ids = ["L1:.:235.go"]
+main_task = "M0.1"
+target_dim = "generic"
+status = "partial"
+
+[[features]]
+feature_id = "amd64-lower"
+spec_atoms = ["spec:Expressions"]
+impl_atoms = ["rules:AMD64.rules", "obj:x86:asm6.go"]
+test_ids = ["L1:codegen:addrcalc.go"]
+negative_test_ids = ["L1:.:alias.go"]
+main_task = "M7.2"
+target_dim = "amd64/linux"
+status = "verified"
+mutation_case_id = "mut:flip-amd64-lower"

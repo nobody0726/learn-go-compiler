@@ -1,0 +1,1005 @@
+# Ground-truth set A: spec_atoms
+# Mechanically generated from go_source_code/doc/go_spec.html -- DO NOT EDIT.
+# Regenerate: python tools/extract_spec_atoms.py
+# One atom per <h2>/<h3> clause. Humans only attribute to feature_ids.
+
+[[spec_atoms]]
+atom_id = "spec:Introduction"
+kind = "h2"
+title = "Introduction"
+anchor = "Introduction"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7
+
+[[spec_atoms]]
+atom_id = "spec:Notation"
+kind = "h2"
+title = "Notation"
+anchor = "Notation"
+source_path = "go_source_code/doc/go_spec.html"
+line = 27
+
+[[spec_atoms]]
+atom_id = "spec:Source_code_representation"
+kind = "h2"
+title = "Source code representation"
+anchor = "Source_code_representation"
+source_path = "go_source_code/doc/go_spec.html"
+line = 79
+
+[[spec_atoms]]
+atom_id = "spec:Characters"
+kind = "h3"
+title = "Characters"
+anchor = "Characters"
+source_path = "go_source_code/doc/go_spec.html"
+line = 105
+
+[[spec_atoms]]
+atom_id = "spec:Letters_and_digits"
+kind = "h3"
+title = "Letters and digits"
+anchor = "Letters_and_digits"
+source_path = "go_source_code/doc/go_spec.html"
+line = 124
+
+[[spec_atoms]]
+atom_id = "spec:Lexical_elements"
+kind = "h2"
+title = "Lexical elements"
+anchor = "Lexical_elements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 137
+
+[[spec_atoms]]
+atom_id = "spec:Comments"
+kind = "h3"
+title = "Comments"
+anchor = "Comments"
+source_path = "go_source_code/doc/go_spec.html"
+line = 139
+
+[[spec_atoms]]
+atom_id = "spec:Tokens"
+kind = "h3"
+title = "Tokens"
+anchor = "Tokens"
+source_path = "go_source_code/doc/go_spec.html"
+line = 163
+
+[[spec_atoms]]
+atom_id = "spec:Semicolons"
+kind = "h3"
+title = "Semicolons"
+anchor = "Semicolons"
+source_path = "go_source_code/doc/go_spec.html"
+line = 179
+
+[[spec_atoms]]
+atom_id = "spec:Identifiers"
+kind = "h3"
+title = "Identifiers"
+anchor = "Identifiers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 233
+
+[[spec_atoms]]
+atom_id = "spec:Keywords"
+kind = "h3"
+title = "Keywords"
+anchor = "Keywords"
+source_path = "go_source_code/doc/go_spec.html"
+line = 255
+
+[[spec_atoms]]
+atom_id = "spec:Operators_and_punctuation"
+kind = "h3"
+title = "Operators and punctuation"
+anchor = "Operators_and_punctuation"
+source_path = "go_source_code/doc/go_spec.html"
+line = 268
+
+[[spec_atoms]]
+atom_id = "spec:Integer_literals"
+kind = "h3"
+title = "Integer literals"
+anchor = "Integer_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 284
+
+[[spec_atoms]]
+atom_id = "spec:Floating-point_literals"
+kind = "h3"
+title = "Floating-point literals"
+anchor = "Floating-point_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 336
+
+[[spec_atoms]]
+atom_id = "spec:Imaginary_literals"
+kind = "h3"
+title = "Imaginary literals"
+anchor = "Imaginary_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 414
+
+[[spec_atoms]]
+atom_id = "spec:Rune_literals"
+kind = "h3"
+title = "Rune literals"
+anchor = "Rune_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 453
+
+[[spec_atoms]]
+atom_id = "spec:String_literals"
+kind = "h3"
+title = "String literals"
+anchor = "String_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 553
+
+[[spec_atoms]]
+atom_id = "spec:Constants"
+kind = "h2"
+title = "Constants"
+anchor = "Constants"
+source_path = "go_source_code/doc/go_spec.html"
+line = 633
+
+[[spec_atoms]]
+atom_id = "spec:Variables"
+kind = "h2"
+title = "Variables"
+anchor = "Variables"
+source_path = "go_source_code/doc/go_spec.html"
+line = 741
+
+[[spec_atoms]]
+atom_id = "spec:Types"
+kind = "h2"
+title = "Types"
+anchor = "Types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 799
+
+[[spec_atoms]]
+atom_id = "spec:Boolean_types"
+kind = "h3"
+title = "Boolean types"
+anchor = "Boolean_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 835
+
+[[spec_atoms]]
+atom_id = "spec:Numeric_types"
+kind = "h3"
+title = "Numeric types"
+anchor = "Numeric_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 844
+
+[[spec_atoms]]
+atom_id = "spec:String_types"
+kind = "h3"
+title = "String types"
+anchor = "String_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 900
+
+[[spec_atoms]]
+atom_id = "spec:Array_types"
+kind = "h3"
+title = "Array types"
+anchor = "Array_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 924
+
+[[spec_atoms]]
+atom_id = "spec:Slice_types"
+kind = "h3"
+title = "Slice types"
+anchor = "Slice_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 982
+
+[[spec_atoms]]
+atom_id = "spec:Struct_types"
+kind = "h3"
+title = "Struct types"
+anchor = "Struct_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1052
+
+[[spec_atoms]]
+atom_id = "spec:Pointer_types"
+kind = "h3"
+title = "Pointer types"
+anchor = "Pointer_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1195
+
+[[spec_atoms]]
+atom_id = "spec:Function_types"
+kind = "h3"
+title = "Function types"
+anchor = "Function_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1213
+
+[[spec_atoms]]
+atom_id = "spec:Interface_types"
+kind = "h3"
+title = "Interface types"
+anchor = "Interface_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1260
+
+[[spec_atoms]]
+atom_id = "spec:Map_types"
+kind = "h3"
+title = "Map types"
+anchor = "Map_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1628
+
+[[spec_atoms]]
+atom_id = "spec:Channel_types"
+kind = "h3"
+title = "Channel types"
+anchor = "Channel_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1688
+
+[[spec_atoms]]
+atom_id = "spec:Properties_of_types_and_values"
+kind = "h2"
+title = "Properties of types and values"
+anchor = "Properties_of_types_and_values"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1774
+
+[[spec_atoms]]
+atom_id = "spec:Representation_of_values"
+kind = "h3"
+title = "Representation of values"
+anchor = "Representation_of_values"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1776
+
+[[spec_atoms]]
+atom_id = "spec:Underlying_types"
+kind = "h3"
+title = "Underlying types"
+anchor = "Underlying_types"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1827
+
+[[spec_atoms]]
+atom_id = "spec:Type_identity"
+kind = "h3"
+title = "Type identity"
+anchor = "Type_identity"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1862
+
+[[spec_atoms]]
+atom_id = "spec:Assignability"
+kind = "h3"
+title = "Assignability"
+anchor = "Assignability"
+source_path = "go_source_code/doc/go_spec.html"
+line = 1963
+
+[[spec_atoms]]
+atom_id = "spec:Representability"
+kind = "h3"
+title = "Representability"
+anchor = "Representability"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2031
+
+[[spec_atoms]]
+atom_id = "spec:Method_sets"
+kind = "h3"
+title = "Method sets"
+anchor = "Method_sets"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2093
+
+[[spec_atoms]]
+atom_id = "spec:Blocks"
+kind = "h2"
+title = "Blocks"
+anchor = "Blocks"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2130
+
+[[spec_atoms]]
+atom_id = "spec:Declarations_and_scope"
+kind = "h2"
+title = "Declarations and scope"
+anchor = "Declarations_and_scope"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2170
+
+[[spec_atoms]]
+atom_id = "spec:Label_scopes"
+kind = "h3"
+title = "Label scopes"
+anchor = "Label_scopes"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2253
+
+[[spec_atoms]]
+atom_id = "spec:Blank_identifier"
+kind = "h3"
+title = "Blank identifier"
+anchor = "Blank_identifier"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2268
+
+[[spec_atoms]]
+atom_id = "spec:Predeclared_identifiers"
+kind = "h3"
+title = "Predeclared identifiers"
+anchor = "Predeclared_identifiers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2278
+
+[[spec_atoms]]
+atom_id = "spec:Exported_identifiers"
+kind = "h3"
+title = "Exported identifiers"
+anchor = "Exported_identifiers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2304
+
+[[spec_atoms]]
+atom_id = "spec:Uniqueness_of_identifiers"
+kind = "h3"
+title = "Uniqueness of identifiers"
+anchor = "Uniqueness_of_identifiers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2321
+
+[[spec_atoms]]
+atom_id = "spec:Constant_declarations"
+kind = "h3"
+title = "Constant declarations"
+anchor = "Constant_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2331
+
+[[spec_atoms]]
+atom_id = "spec:Iota"
+kind = "h3"
+title = "Iota"
+anchor = "Iota"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2400
+
+[[spec_atoms]]
+atom_id = "spec:Type_declarations"
+kind = "h3"
+title = "Type declarations"
+anchor = "Type_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2453
+
+[[spec_atoms]]
+atom_id = "spec:Type_parameter_declarations"
+kind = "h3"
+title = "Type parameter declarations"
+anchor = "Type_parameter_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2634
+
+[[spec_atoms]]
+atom_id = "spec:Variable_declarations"
+kind = "h3"
+title = "Variable declarations"
+anchor = "Variable_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2811
+
+[[spec_atoms]]
+atom_id = "spec:Short_variable_declarations"
+kind = "h3"
+title = "Short variable declarations"
+anchor = "Short_variable_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2866
+
+[[spec_atoms]]
+atom_id = "spec:Function_declarations"
+kind = "h3"
+title = "Function declarations"
+anchor = "Function_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2919
+
+[[spec_atoms]]
+atom_id = "spec:Method_declarations"
+kind = "h3"
+title = "Method declarations"
+anchor = "Method_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 2981
+
+[[spec_atoms]]
+atom_id = "spec:Expressions"
+kind = "h2"
+title = "Expressions"
+anchor = "Expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3104
+
+[[spec_atoms]]
+atom_id = "spec:Operands"
+kind = "h3"
+title = "Operands"
+anchor = "Operands"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3111
+
+[[spec_atoms]]
+atom_id = "spec:Qualified_identifiers"
+kind = "h3"
+title = "Qualified identifiers"
+anchor = "Qualified_identifiers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3149
+
+[[spec_atoms]]
+atom_id = "spec:Composite_literals"
+kind = "h3"
+title = "Composite literals"
+anchor = "Composite_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3172
+
+[[spec_atoms]]
+atom_id = "spec:Function_literals"
+kind = "h3"
+title = "Function literals"
+anchor = "Function_literals"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3417
+
+[[spec_atoms]]
+atom_id = "spec:Primary_expressions"
+kind = "h3"
+title = "Primary expressions"
+anchor = "Primary_expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3449
+
+[[spec_atoms]]
+atom_id = "spec:Selectors"
+kind = "h3"
+title = "Selectors"
+anchor = "Selectors"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3487
+
+[[spec_atoms]]
+atom_id = "spec:Method_expressions"
+kind = "h3"
+title = "Method expressions"
+anchor = "Method_expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3633
+
+[[spec_atoms]]
+atom_id = "spec:Method_values"
+kind = "h3"
+title = "Method values"
+anchor = "Method_values"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3754
+
+[[spec_atoms]]
+atom_id = "spec:Index_expressions"
+kind = "h3"
+title = "Index expressions"
+anchor = "Index_expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 3872
+
+[[spec_atoms]]
+atom_id = "spec:Slice_expressions"
+kind = "h3"
+title = "Slice expressions"
+anchor = "Slice_expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4004
+
+[[spec_atoms]]
+atom_id = "spec:Type_assertions"
+kind = "h3"
+title = "Type assertions"
+anchor = "Type_assertions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4160
+
+[[spec_atoms]]
+atom_id = "spec:Calls"
+kind = "h3"
+title = "Calls"
+anchor = "Calls"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4228
+
+[[spec_atoms]]
+atom_id = "spec:Instantiations"
+kind = "h3"
+title = "Instantiations"
+anchor = "Instantiations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4384
+
+[[spec_atoms]]
+atom_id = "spec:Type_inference"
+kind = "h3"
+title = "Type inference"
+anchor = "Type_inference"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4485
+
+[[spec_atoms]]
+atom_id = "spec:Operators"
+kind = "h3"
+title = "Operators"
+anchor = "Operators"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4814
+
+[[spec_atoms]]
+atom_id = "spec:Arithmetic_operators"
+kind = "h3"
+title = "Arithmetic operators"
+anchor = "Arithmetic_operators"
+source_path = "go_source_code/doc/go_spec.html"
+line = 4926
+
+[[spec_atoms]]
+atom_id = "spec:Comparison_operators"
+kind = "h3"
+title = "Comparison operators"
+anchor = "Comparison_operators"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5135
+
+[[spec_atoms]]
+atom_id = "spec:Logical_operators"
+kind = "h3"
+title = "Logical operators"
+anchor = "Logical_operators"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5294
+
+[[spec_atoms]]
+atom_id = "spec:Address_operators"
+kind = "h3"
+title = "Address operators"
+anchor = "Address_operators"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5309
+
+[[spec_atoms]]
+atom_id = "spec:Receive_operator"
+kind = "h3"
+title = "Receive operator"
+anchor = "Receive_operator"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5346
+
+[[spec_atoms]]
+atom_id = "spec:Conversions"
+kind = "h3"
+title = "Conversions"
+anchor = "Conversions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5394
+
+[[spec_atoms]]
+atom_id = "spec:Constant_expressions"
+kind = "h3"
+title = "Constant expressions"
+anchor = "Constant_expressions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5757
+
+[[spec_atoms]]
+atom_id = "spec:Order_of_evaluation"
+kind = "h3"
+title = "Order of evaluation"
+anchor = "Order_of_evaluation"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5879
+
+[[spec_atoms]]
+atom_id = "spec:Statements"
+kind = "h2"
+title = "Statements"
+anchor = "Statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5950
+
+[[spec_atoms]]
+atom_id = "spec:Terminating_statements"
+kind = "h3"
+title = "Terminating statements"
+anchor = "Terminating_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 5965
+
+[[spec_atoms]]
+atom_id = "spec:Empty_statements"
+kind = "h3"
+title = "Empty statements"
+anchor = "Empty_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6046
+
+[[spec_atoms]]
+atom_id = "spec:Labeled_statements"
+kind = "h3"
+title = "Labeled statements"
+anchor = "Labeled_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6057
+
+[[spec_atoms]]
+atom_id = "spec:Expression_statements"
+kind = "h3"
+title = "Expression statements"
+anchor = "Expression_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6074
+
+[[spec_atoms]]
+atom_id = "spec:Send_statements"
+kind = "h3"
+title = "Send statements"
+anchor = "Send_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6105
+
+[[spec_atoms]]
+atom_id = "spec:IncDec_statements"
+kind = "h3"
+title = "IncDec statements"
+anchor = "IncDec_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6141
+
+[[spec_atoms]]
+atom_id = "spec:Assignment_statements"
+kind = "h3"
+title = "Assignment statements"
+anchor = "Assignment_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6166
+
+[[spec_atoms]]
+atom_id = "spec:If_statements"
+kind = "h3"
+title = "If statements"
+anchor = "If_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6327
+
+[[spec_atoms]]
+atom_id = "spec:Switch_statements"
+kind = "h3"
+title = "Switch statements"
+anchor = "Switch_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6362
+
+[[spec_atoms]]
+atom_id = "spec:For_statements"
+kind = "h3"
+title = "For statements"
+anchor = "For_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6606
+
+[[spec_atoms]]
+atom_id = "spec:Go_statements"
+kind = "h3"
+title = "Go statements"
+anchor = "Go_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6962
+
+[[spec_atoms]]
+atom_id = "spec:Select_statements"
+kind = "h3"
+title = "Select statements"
+anchor = "Select_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 6999
+
+[[spec_atoms]]
+atom_id = "spec:Return_statements"
+kind = "h3"
+title = "Return statements"
+anchor = "Return_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7108
+
+[[spec_atoms]]
+atom_id = "spec:Break_statements"
+kind = "h3"
+title = "Break statements"
+anchor = "Break_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7206
+
+[[spec_atoms]]
+atom_id = "spec:Continue_statements"
+kind = "h3"
+title = "Continue statements"
+anchor = "Continue_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7242
+
+[[spec_atoms]]
+atom_id = "spec:Goto_statements"
+kind = "h3"
+title = "Goto statements"
+anchor = "Goto_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7273
+
+[[spec_atoms]]
+atom_id = "spec:Fallthrough_statements"
+kind = "h3"
+title = "Fallthrough statements"
+anchor = "Fallthrough_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7328
+
+[[spec_atoms]]
+atom_id = "spec:Defer_statements"
+kind = "h3"
+title = "Defer statements"
+anchor = "Defer_statements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7341
+
+[[spec_atoms]]
+atom_id = "spec:Built-in_functions"
+kind = "h2"
+title = "Built-in functions"
+anchor = "Built-in_functions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7407
+
+[[spec_atoms]]
+atom_id = "spec:Appending_and_copying_slices"
+kind = "h3"
+title = "Appending to and copying slices"
+anchor = "Appending_and_copying_slices"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7423
+
+[[spec_atoms]]
+atom_id = "spec:Clear"
+kind = "h3"
+title = "Clear"
+anchor = "Clear"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7515
+
+[[spec_atoms]]
+atom_id = "spec:Close"
+kind = "h3"
+title = "Close"
+anchor = "Close"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7548
+
+[[spec_atoms]]
+atom_id = "spec:Complex_numbers"
+kind = "h3"
+title = "Manipulating complex numbers"
+anchor = "Complex_numbers"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7570
+
+[[spec_atoms]]
+atom_id = "spec:Deletion_of_map_elements"
+kind = "h3"
+title = "Deletion of map elements"
+anchor = "Deletion_of_map_elements"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7639
+
+[[spec_atoms]]
+atom_id = "spec:Length_and_capacity"
+kind = "h3"
+title = "Length and capacity"
+anchor = "Length_and_capacity"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7663
+
+[[spec_atoms]]
+atom_id = "spec:Making_slices_maps_and_channels"
+kind = "h3"
+title = "Making slices, maps and channels"
+anchor = "Making_slices_maps_and_channels"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7734
+
+[[spec_atoms]]
+atom_id = "spec:Min_and_max"
+kind = "h3"
+title = "Min and max"
+anchor = "Min_and_max"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7796
+
+[[spec_atoms]]
+atom_id = "spec:Allocation"
+kind = "h3"
+title = "Allocation"
+anchor = "Allocation"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7861
+
+[[spec_atoms]]
+atom_id = "spec:Handling_panics"
+kind = "h3"
+title = "Handling panics"
+anchor = "Handling_panics"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7904
+
+[[spec_atoms]]
+atom_id = "spec:Bootstrapping"
+kind = "h3"
+title = "Bootstrapping"
+anchor = "Bootstrapping"
+source_path = "go_source_code/doc/go_spec.html"
+line = 7980
+
+[[spec_atoms]]
+atom_id = "spec:Packages"
+kind = "h2"
+title = "Packages"
+anchor = "Packages"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8002
+
+[[spec_atoms]]
+atom_id = "spec:Source_file_organization"
+kind = "h3"
+title = "Source file organization"
+anchor = "Source_file_organization"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8013
+
+[[spec_atoms]]
+atom_id = "spec:Package_clause"
+kind = "h3"
+title = "Package clause"
+anchor = "Package_clause"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8027
+
+[[spec_atoms]]
+atom_id = "spec:Import_declarations"
+kind = "h3"
+title = "Import declarations"
+anchor = "Import_declarations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8052
+
+[[spec_atoms]]
+atom_id = "spec:An_example_package"
+kind = "h3"
+title = "An example package"
+anchor = "An_example_package"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8131
+
+[[spec_atoms]]
+atom_id = "spec:Program_initialization_and_execution"
+kind = "h2"
+title = "Program initialization and execution"
+anchor = "Program_initialization_and_execution"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8177
+
+[[spec_atoms]]
+atom_id = "spec:The_zero_value"
+kind = "h3"
+title = "The zero value"
+anchor = "The_zero_value"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8179
+
+[[spec_atoms]]
+atom_id = "spec:Package_initialization"
+kind = "h3"
+title = "Package initialization"
+anchor = "Package_initialization"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8229
+
+[[spec_atoms]]
+atom_id = "spec:Program_initialization"
+kind = "h3"
+title = "Program initialization"
+anchor = "Program_initialization"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8395
+
+[[spec_atoms]]
+atom_id = "spec:Program_execution"
+kind = "h3"
+title = "Program execution"
+anchor = "Program_execution"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8425
+
+[[spec_atoms]]
+atom_id = "spec:Errors"
+kind = "h2"
+title = "Errors"
+anchor = "Errors"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8446
+
+[[spec_atoms]]
+atom_id = "spec:Run_time_panics"
+kind = "h2"
+title = "Run-time panics"
+anchor = "Run_time_panics"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8468
+
+[[spec_atoms]]
+atom_id = "spec:System_considerations"
+kind = "h2"
+title = "System considerations"
+anchor = "System_considerations"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8490
+
+[[spec_atoms]]
+atom_id = "spec:Size_and_alignment_guarantees"
+kind = "h3"
+title = "Size and alignment guarantees"
+anchor = "Size_and_alignment_guarantees"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8650
+
+[[spec_atoms]]
+atom_id = "spec:Appendix"
+kind = "h2"
+title = "Appendix"
+anchor = "Appendix"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8686
+
+[[spec_atoms]]
+atom_id = "spec:Language_versions"
+kind = "h3"
+title = "Language versions"
+anchor = "Language_versions"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8688
+
+[[spec_atoms]]
+atom_id = "spec:Type_unification_rules"
+kind = "h3"
+title = "Type unification rules"
+anchor = "Type_unification_rules"
+source_path = "go_source_code/doc/go_spec.html"
+line = 8859
+

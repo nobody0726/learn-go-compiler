@@ -1,0 +1,63 @@
+==========================================================================
+triangle diff -- A(spec) x B(impl) x C(test) x features.toml
+==========================================================================
+baseline   A=125 spec atoms   B=183 impl atoms   C=2738 tests   features=2
+claimed    A     2/125 (  1.6%)   B     3/183 (  1.6%)   C     3/2738 (  0.1%)
+
+[0] dangling references (feature cites an atom that does not exist)   0
+    none -- the attribution layer only cites atoms that really exist
+
+[1] A-only red zone: spec clauses nobody claims            123/125
+    spec:Introduction                        h2  line 7
+    spec:Notation                            h2  line 27
+    spec:Source_code_representation          h2  line 79
+    spec:Characters                          h3  line 105
+    spec:Letters_and_digits                  h3  line 124
+    spec:Lexical_elements                    h2  line 137
+    spec:Tokens                              h3  line 163
+    spec:Semicolons                          h3  line 179
+    ... 115 more  (--full to list all)
+
+[2] B-only red zone: impl atoms nobody claims              180/183
+    by kind: flag 66   obj 70   pragma 18   rules 26
+    flag:B                             flag    disable bounds checking
+    flag:C                             flag    disable printing of columns in error messages
+    flag:D                             flag    set relative `path` for local imports
+    flag:E                             flag    debug symbol export
+    flag:I                             flag    add `directory` to import search path
+    flag:K                             flag    debug missing line numbers
+    flag:L                             flag    also show actual source file names in error messages for positions affected by //line directives
+    flag:N                             flag    disable optimizations
+    ... 172 more  (--full to list all)
+
+[3] C-only red zone: tests nobody claims                   2735/2738
+    by layer: L1 2725   L3 1   L5 9
+    by group (top 8 of 16):
+      L1:fixedbugs                  1854 unclaimed
+      L1:.                           354 unclaimed
+      L1:typeparam                   266 unclaimed
+      L1:codegen                      86 unclaimed
+      L1:ken                          40 unclaimed
+      L1:abi                          39 unclaimed
+      L1:interface                    21 unclaimed
+      L1:typeparam/mdempsky           20 unclaimed
+      ... 8 more groups
+
+[4] attribution by milestone
+    M0.1       1 feature(s)
+    M7.2       1 feature(s)
+
+[5] next attribution candidates (spec order, first 8)
+    spec:Introduction
+    spec:Notation
+    spec:Source_code_representation
+    spec:Characters
+    spec:Letters_and_digits
+    spec:Lexical_elements
+    spec:Tokens
+    spec:Semicolons
+
+==========================================================================
+red zones total 3038   dangling 0
+VERDICT: OK -- no data errors. Red zones are unclaimed work, not bugs.
+==========================================================================
