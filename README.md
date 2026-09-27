@@ -24,8 +24,10 @@
 
 | 排除项 | 原因 | 如何获取 |
 |---|---|---|
-| *Engineering a Compiler* (2nd ed.) 的 PDF、markdown 转换件、章节拆分与插图 | 受版权保护的出版物，不在公开仓库分发其副本 | 请自行购买原书 |
+| *Engineering a Compiler* (2nd ed.) 的 PDF、全文 markdown 转换件、章节拆分（`doc/chapters/`）与插图（`doc/images/`） | 受版权保护的出版物，不在公开仓库分发其副本 | 请自行购买原书 |
 | `go_source_code/`（Go 1.27.1 源码树，185 MB / 约 16000 文件） | 体积大，且官方可直接下载 | <https://go.dev/dl/> |
+
+> **关于 `doc/chapters/` 与 `doc/images/`**：这两项是原书正文与插图的逐字复制件，曾短暂随仓库私有化而入库（2026-09-27），改回 public 时已移出版本管理，**文件仍保留在本地磁盘**。阅读本仓库文档时它们不存在，但 `doc/go_book_mapping.md` 已提供完整的**章节 ↔ 源码包**对照，足以在不打开原书的情况下导航。
 
 **这意味着**：`doc/` 中指向教材章节的链接、以及形如 `src/cmd/compile/internal/ssa/dom.go:120` 的源码引用，需要在本地补齐上述两项后才能点开。**所有行号锚点都是按 Go 1.27.1 实际核对过的**，补齐源码树即可逐条验证。
 
@@ -95,3 +97,4 @@ PYTHONPATH=tools python3 tools/triangle_diff.py         # 未认领清单
 - Go 源码树：**go1.27.1**
 - 教材：*Engineering a Compiler*, 2nd Edition（Keith Cooper, Linda Torczon）
 - 覆盖度工具：Python 标准库，实测于 Python 3.13
+- 仓库可见性：**public**（不含教材原文，见上文「不包含什么」）

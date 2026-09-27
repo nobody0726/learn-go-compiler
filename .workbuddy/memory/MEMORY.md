@@ -96,9 +96,13 @@ Unified IR(`noder/`)、写屏障(`ssa/writebarrier.go`)、GC 安全点活性(`li
 
 ## GitHub 发布（2026-09-27）
 
-- 仓库：**https://github.com/nobody0726/learn-go-compiler**（public，`main` 分支）。
-- **入库边界**（见根 `.gitignore`，带理由注释）：排除教材原文（PDF / 全文 md / `_raw` / `copy` / `doc/chapters/` / `doc/images/` —— 版权）与 `go_source_code/`（185MB —— 体积）；保留自有分析文档 + `rust_go_compiler/` + `.workbuddy/memory/`。当前 **29 文件 / 0.74MB**。
-- **不要去公开仓库找教材**：`doc/go_book_mapping.md` 里指向教材章节的链接、以及 `src/...:行号` 引用，都要本地补齐「原书 + go_source_code」才能点开；行号锚点本身按 Go 1.27.1 核对过。
+- 仓库：**https://github.com/nobody0726/learn-go-compiler**（**private**，`main` 分支。当天先建为 public，随后按用户要求改为 private）。
+- **入库边界**（见根 `.gitignore`，带理由注释）。当前 **439 文件 / 9.83MB**：
+  - **入库**：自有分析文档 + `rust_go_compiler/` + `.workbuddy/memory/` + **`doc/chapters/`（19 个：ch01–ch13 + 附录 A/B + 前言/索引/参考文献）+ `doc/images/`（390 张原书插图）**。后两项是**版权内容**，因仓库私有化（个人存储）才纳入。
+  - **排除**：教材 PDF / 全文单文件 md / `_raw` / `copy`（体积大，且 `doc/chapters/` 已含同一文本）+ `go_source_code/`（185MB —— 体积）。
+  - **纪律：改回 public 之前必须先 `git rm -r --cached doc/chapters doc/images` 并提交**，否则构成公开发行受版权保护的作品。`.gitignore` 顶部与 README「关于版权」一节都有此提醒。
+- **`git push` 通不通取决于会话代理**：实测建仓首次推送、以及本次（改私有后）推送**均成功**；中间有一次 `github.com` CONNECT 返回 502 而失败。若报 `CONNECT tunnel failed, response 502`，用 GitHub Git Data API 重放提交（做法见用户级记忆）。
+- **文档链接现状**：`doc/chapters/...` 链接在仓库内可直接点开；`src/...:行号` 引用仍需本地补齐 `go_source_code/` 才能点开。行号锚点按 Go 1.27.1 核对过。
 - **实现仓库是另一个**：`nobody0726/go-compiler-rust`（2026-08-16 起，crates/ 已有 lexer/parser/sema/hir/mir/ssa/codegen 等 13 个 crate）。本仓库放分析+覆盖工具，它放实现。分工已写进 README。
 - **环境坑**：`gh` 装在 `/opt/homebrew/bin/gh`，但沙箱 shell 的 PATH 里没有 `/opt/homebrew/bin` → 用前须 `export PATH="/opt/homebrew/bin:$PATH"`。
 - **git 身份**：用**仓库级**配置（`nobody0726` / `<login>@users.noreply.github.com`），**没动 global**（用户 global 为空的）。新仓库沿用此约定。
