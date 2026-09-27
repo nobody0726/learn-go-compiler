@@ -96,13 +96,15 @@ Unified IR(`noder/`)、写屏障(`ssa/writebarrier.go`)、GC 安全点活性(`li
 
 ## GitHub 发布（2026-09-27）
 
-- 仓库：**https://github.com/nobody0726/learn-go-compiler**（**private**，`main` 分支。当天先建为 public，随后按用户要求改为 private）。
-- **入库边界**（见根 `.gitignore`，带理由注释）。当前 **439 文件 / 9.83MB**：
-  - **入库**：自有分析文档 + `rust_go_compiler/` + `.workbuddy/memory/` + **`doc/chapters/`（19 个：ch01–ch13 + 附录 A/B + 前言/索引/参考文献）+ `doc/images/`（390 张原书插图）**。后两项是**版权内容**，因仓库私有化（个人存储）才纳入。
-  - **排除**：教材 PDF / 全文单文件 md / `_raw` / `copy`（体积大，且 `doc/chapters/` 已含同一文本）+ `go_source_code/`（185MB —— 体积）。
-  - **纪律：改回 public 之前必须先 `git rm -r --cached doc/chapters doc/images` 并提交**，否则构成公开发行受版权保护的作品。`.gitignore` 顶部与 README「关于版权」一节都有此提醒。
-- **`git push` 通不通取决于会话代理**：实测建仓首次推送、以及本次（改私有后）推送**均成功**；中间有一次 `github.com` CONNECT 返回 502 而失败。若报 `CONNECT tunnel failed, response 502`，用 GitHub Git Data API 重放提交（做法见用户级记忆）。
-- **文档链接现状**：`doc/chapters/...` 链接在仓库内可直接点开；`src/...:行号` 引用仍需本地补齐 `go_source_code/` 才能点开。行号锚点按 Go 1.27.1 核对过。
+- 仓库：**https://github.com/nobody0726/learn-go-compiler**（**public**，`main` 分支）。当天走过 public → private → public 三轮。
+- **入库边界**（见根 `.gitignore`，带理由注释）。当前 **30 文件 / 0.74MB**：
+  - **入库**：自有分析文档（`doc/go_*.md`、`doc/rust_go_compiler_*.md`）+ `doc/devlog/` + `rust_go_compiler/`（工具 + coverage TOML）+ `AGENTS.md` + `README.md` + `.workbuddy/memory/`。
+  - **排除**：`doc/chapters/`（原书正文 19 个）+ `doc/images/`（原书插图 390 张）—— **版权内容**，仅在仓库 private 期间入库过，改回 public 时移出（`git rm -r --cached`，**本地文件全部保留**）；教材 PDF / 全文 md / `_raw` / `copy` 从未入库；`go_source_code/`（185MB）从未入库。
+  - **纪律**：任何时候改仓库可见性，先确认 `.gitignore` 里 `doc/chapters/` 与 `doc/images/` 两行仍在生效。
+- **历史已重写**：三个含教材内容的提交（`61a848f`/`a71102f`/`8e81233c`）被 `git reset --soft 5e5c154d` 压缩为单个 `0adb53fc`（树内容不变 `82930015`）。当前历史 3 个提交 `c8c3ebf` → `5e5c154d` → `0adb53fc`，**逐条核验均不含教材路径**。
+- **残留（未彻底清除）**：旧 commit/blob 已无任何 ref 引用（短 SHA 返回 404），但按**完整 SHA 匿名访问仍可取到内容**（实测 blob 返回 200 且解出正文）。GitHub 文档：无引用对象需联系 Support 或重建仓库才能清空。
+- **`git push` 通不通取决于会话代理**（间歇性 502）：建仓首推、教材入库推送**成功**；本次 revert 推送**连试 4 次全 502**，改用 Git Data API 成功。降级做法见用户级记忆。
+- **文档链接现状**：`src/...:行号` 引用需本地补齐 `go_source_code/` 才能点开；`doc/chapters/...` 链接在仓库内已不存在，README「不包含什么」已说明补齐方式。
 - **实现仓库是另一个**：`nobody0726/go-compiler-rust`（2026-08-16 起，crates/ 已有 lexer/parser/sema/hir/mir/ssa/codegen 等 13 个 crate）。本仓库放分析+覆盖工具，它放实现。分工已写进 README。
 - **环境坑**：`gh` 装在 `/opt/homebrew/bin/gh`，但沙箱 shell 的 PATH 里没有 `/opt/homebrew/bin` → 用前须 `export PATH="/opt/homebrew/bin:$PATH"`。
 - **git 身份**：用**仓库级**配置（`nobody0726` / `<login>@users.noreply.github.com`），**没动 global**（用户 global 为空的）。新仓库沿用此约定。
