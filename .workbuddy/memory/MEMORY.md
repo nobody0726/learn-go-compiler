@@ -93,3 +93,12 @@ Unified IR(`noder/`)、写屏障(`ssa/writebarrier.go`)、GC 安全点活性(`li
 - **exit code 语义**：悬空引用 = 数据错误（exit 1）；红区 = 未认领待办（exit 0）。
 - 跑法统一：`PYTHONPATH=tools <py> tools/xxx.py`；单测 `PYTHONPATH=tools <py> -m unittest discover -s tests -v`（34 个用例）。
 - **已知未修**：A 集的 `Introduction`/`Notation` 是叙述性章节（非编译器行为），会永久留在 A-only，候选加 `claimable=false`；A-only 123 条里噪声约 2%。
+
+## GitHub 发布（2026-09-27）
+
+- 仓库：**https://github.com/nobody0726/learn-go-compiler**（public，`main` 分支）。
+- **入库边界**（见根 `.gitignore`，带理由注释）：排除教材原文（PDF / 全文 md / `_raw` / `copy` / `doc/chapters/` / `doc/images/` —— 版权）与 `go_source_code/`（185MB —— 体积）；保留自有分析文档 + `rust_go_compiler/` + `.workbuddy/memory/`。当前 **29 文件 / 0.74MB**。
+- **不要去公开仓库找教材**：`doc/go_book_mapping.md` 里指向教材章节的链接、以及 `src/...:行号` 引用，都要本地补齐「原书 + go_source_code」才能点开；行号锚点本身按 Go 1.27.1 核对过。
+- **实现仓库是另一个**：`nobody0726/go-compiler-rust`（2026-08-16 起，crates/ 已有 lexer/parser/sema/hir/mir/ssa/codegen 等 13 个 crate）。本仓库放分析+覆盖工具，它放实现。分工已写进 README。
+- **环境坑**：`gh` 装在 `/opt/homebrew/bin/gh`，但沙箱 shell 的 PATH 里没有 `/opt/homebrew/bin` → 用前须 `export PATH="/opt/homebrew/bin:$PATH"`。
+- **git 身份**：用**仓库级**配置（`nobody0726` / `<login>@users.noreply.github.com`），**没动 global**（用户 global 为空的）。新仓库沿用此约定。
