@@ -96,14 +96,16 @@ Unified IR(`noder/`)、写屏障(`ssa/writebarrier.go`)、GC 安全点活性(`li
 
 ## GitHub 发布（2026-09-27）
 
-- 仓库：**https://github.com/nobody0726/learn-go-compiler**（**public**，`main` 分支）。当天走过 public → private → public 三轮。
+- 仓库：**https://github.com/nobody0726/learn-go-compiler**（**public**，`main` 分支）。当天走过 public → private → public 三轮，最后**删库重建**。当前历史 4 个提交：`c8c3ebf` → `5e5c154d` → `0adb53fc` → `9d4c6ff`。
 - **入库边界**（见根 `.gitignore`，带理由注释）。当前 **30 文件 / 0.74MB**：
   - **入库**：自有分析文档（`doc/go_*.md`、`doc/rust_go_compiler_*.md`）+ `doc/devlog/` + `rust_go_compiler/`（工具 + coverage TOML）+ `AGENTS.md` + `README.md` + `.workbuddy/memory/`。
   - **排除**：`doc/chapters/`（原书正文 19 个）+ `doc/images/`（原书插图 390 张）—— **版权内容**，仅在仓库 private 期间入库过，改回 public 时移出（`git rm -r --cached`，**本地文件全部保留**）；教材 PDF / 全文 md / `_raw` / `copy` 从未入库；`go_source_code/`（185MB）从未入库。
   - **纪律**：任何时候改仓库可见性，先确认 `.gitignore` 里 `doc/chapters/` 与 `doc/images/` 两行仍在生效。
-- **历史已重写**：三个含教材内容的提交（`61a848f`/`a71102f`/`8e81233c`）被 `git reset --soft 5e5c154d` 压缩为单个 `0adb53fc`（树内容不变 `82930015`）。当前历史 3 个提交 `c8c3ebf` → `5e5c154d` → `0adb53fc`，**逐条核验均不含教材路径**。
-- **残留（未彻底清除）**：旧 commit/blob 已无任何 ref 引用（短 SHA 返回 404），但按**完整 SHA 匿名访问仍可取到内容**（实测 blob 返回 200 且解出正文）。GitHub 文档：无引用对象需联系 Support 或重建仓库才能清空。
-- **`git push` 通不通取决于会话代理**（间歇性 502）：建仓首推、教材入库推送**成功**；本次 revert 推送**连试 4 次全 502**，改用 Git Data API 成功。降级做法见用户级记忆。
+- **历史已重写 + 对象库已清空**：三个含教材内容的提交（`61a848f`/`a71102f`/`8e81233c`）被 `git reset --soft 5e5c154d` 压缩为单个 `0adb53fc`（树内容不变）。**随后删库重建**（token 补授 `delete_repo` 后），旧 commit/blob 从对象库彻底消失。
+- **验证方式（重要，别只看文件数）**：用**旧 SHA 匿名请求**应返回 404 —— 实测旧提交 `61a848fa…`、教材 blob `09512628…`、插图 blob `216a23e1…` **全部 404**（重建前均为 200 且能解出正文）。另核对远端 `HEAD commit` 与 `root tree` SHA 与本地**逐字相同**（`9d4c6ffe` / `c5e98ad5`）。
+- **`git push` 通不通取决于会话代理**（间歇性 502）：建仓首推、教材入库推送**成功**；revert 推送**连试 4 次全 502**（改用 Git Data API）；重建后推送**一次成功**。规律：试 4 次不通就换 API。降级做法见用户级记忆 + 技能 `github-push-via-api`。
+- **token 权限**：`delete_repo` 已于 2026-09-27 授权给 `nobody0726`（当前 scopes：`delete_repo, gist, read:org, repo, workflow`）。核对方式看 API 响应头 `x-oauth-scopes`，**不要看 `gh auth status` 的缓存**。
+- **注意 `diskUsage` 会滞后**：删库重建后立刻查仍可能显示 0KB / 旧值，以 blob 数 + 旧 SHA 404 为准。
 - **文档链接现状**：`src/...:行号` 引用需本地补齐 `go_source_code/` 才能点开；`doc/chapters/...` 链接在仓库内已不存在，README「不包含什么」已说明补齐方式。
 - **实现仓库是另一个**：`nobody0726/go-compiler-rust`（2026-08-16 起，crates/ 已有 lexer/parser/sema/hir/mir/ssa/codegen 等 13 个 crate）。本仓库放分析+覆盖工具，它放实现。分工已写进 README。
 - **环境坑**：`gh` 装在 `/opt/homebrew/bin/gh`，但沙箱 shell 的 PATH 里没有 `/opt/homebrew/bin` → 用前须 `export PATH="/opt/homebrew/bin:$PATH"`。
